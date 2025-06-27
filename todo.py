@@ -93,19 +93,26 @@ def main():
                 indice = int(input("Digite o número da tarefa para marcar como concluída: "))
                 marcar_como_concluida(lista_de_tarefas, indice)
             except ValueError:
-                print("\n❌ Entrada inválida. Por favor, digite um número.")
+                print("\n❌ Entrada inválida. Digite um número.")
         elif escolha == '4':
             listar_tarefas(lista_de_tarefas)
             try:
                 indice = int(input("Digite o número da tarefa para remover: "))
                 remover_tarefa(lista_de_tarefas, indice)
             except ValueError:
-                print("\n❌ Entrada inválida. Por favor, digite um número.")
+                print("\n❌ Entrada inválida. Digite um número.")
+        elif escolha == '5':
+            listar_tarefas(lista_de_tarefas)
+            try:
+                indice = int(input("Digite o número da tarefa para editar a descrição: "))
+                editar_descricao_tarefa(lista_de_tarefas, indice)
+            except ValueError:
+                print("\n❌ Entrada inválida. Digite um número.")
         elif escolha == '0':
             print("\nObrigado por usar o Gerenciador de Tarefas. Até mais!")
             break
         else:
-            print("\n❌ Opção inválida. Por favor, tente novamente.")
+            print("\n❌ Opção inválida. Tente novamente.")
 
 # Garante que a função main() só será executada quando o script for rodado diretamente
 if __name__ == "__main__":
