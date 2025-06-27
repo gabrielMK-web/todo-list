@@ -63,12 +63,13 @@ def editar_descricao_tarefa(tarefas, indice):
         print("\n❌ Índice inválido. Escolha um número da lista.")
 
 def exibir_menu():
-    """Exibe o menu de opções para o usuário."""
+    """Menu principal."""
     print("\n--- MENU ---")
     print("1. Adicionar Tarefa")
     print("2. Listar Tarefas")
     print("3. Marcar Tarefa como Concluída")
     print("4. Remover Tarefa")
+    print("5. Editar Descrição da Tarefa")
     print("0. Sair")
 
 def main():
